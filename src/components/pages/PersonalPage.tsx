@@ -4,13 +4,33 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Bike, Crosshair, Footprints, Sparkles } from 'lucide-react';
 
+const FaZeMark = () => (
+  <svg
+    viewBox="0 0 120 82"
+    className="h-12 w-16 shrink-0"
+    role="img"
+    aria-label="FaZe Clan mark"
+  >
+    <path
+      d="M8 10h98l-13 17H58l14 13h-27l-13 32H15l13-32H8l13-17h20l6-13H8z"
+      fill="#101827"
+    />
+    <path
+      d="M13 14h83l-8 9H54l15 13H42L30 68H19l13-32H13l9-13h22l5-9H13z"
+      fill="#ef2f26"
+    />
+    <path d="M52 42h47L86 58H40l12-16z" fill="#101827" />
+    <path d="M55 45h35l-7 8H47l8-8z" fill="#ef2f26" />
+  </svg>
+);
+
 const cardItems = [
   {
     title: 'Running',
     icon: Footprints,
     image: '/fig/running.jpg',
     imageAlt: 'Running',
-    body: 'Running clears my head and keeps me grounded. I enjoy the solitude of long runs, the rhythm of steady miles, and the sense of progress, one step at a time.',
+    body: '\u8d70\u308b\u3068\u306f\u529b\u3060\u3002\u30b9\u30d4\u30fc\u30c9\u3067\u306f\u306a\u304f\u3001\u4e00\u4eba\u306e\u307e\u307e\u3067\u3060\u308c\u304b\u3068\u3064\u306a\u304c\u308c\u308b\u5f37\u3055\u3060\u3002',
     tone: 'amber',
   },
   {
@@ -18,7 +38,7 @@ const cardItems = [
     icon: Bike,
     image: '/fig/urbanx.png',
     imageAlt: 'Urbex',
-    body: 'I love exploring every corner of the city—from grand modern structures like Lujiazui, to the old residential areas built in the last century or the early 2000s. I truly enjoy the feeling of wandering through time, moving between different eras with every turn.',
+    body: 'I love exploring every corner of the city\u2014from grand modern structures like Lujiazui, to the old residential areas built in the last century or the early 2000s. I truly enjoy the feeling of wandering through time, moving between different eras with every turn.',
     tone: 'slate',
   },
   {
@@ -26,7 +46,7 @@ const cardItems = [
     icon: Crosshair,
     image: '/fig/cs.png',
     imageAlt: 'CS2',
-    body: 'I enjoy the strategy, teamwork, and precision that CS2 brings. It is where quick decisions and calm minds make the difference.',
+    body: 'FaZe Clan shaped my youth: 5 Major finals, 4 runner-up finishes, 3 last-15-second rotations, 2 points on the decider, 1 Antwerp, 0 surrender.',
     tone: 'rose',
     callout: 'Favorite team: FaZe Clan',
   },
@@ -59,11 +79,11 @@ export default function PersonalPage() {
             <div className="mb-8 h-1 w-52 rounded-full bg-gradient-to-r from-accent via-accent-light to-transparent" />
 
             <blockquote className="relative max-w-xl font-serif text-2xl italic leading-snug text-primary sm:text-3xl">
-              <span className="absolute -left-7 -top-2 text-5xl not-italic text-accent/80">“</span>
+              <span className="absolute -left-7 -top-2 text-5xl not-italic text-accent/80">&ldquo;</span>
               The future will always outshine
               <br />
-              the past and the present—in every sense.
-              <span className="ml-2 text-5xl not-italic text-accent/80">”</span>
+              the past and the present&mdash;in every sense.
+              <span className="ml-2 text-5xl not-italic text-accent/80">&rdquo;</span>
             </blockquote>
 
             <p className="mt-9 max-w-lg text-base leading-8 text-primary/85">
@@ -81,7 +101,7 @@ export default function PersonalPage() {
                 width={720}
                 height={1280}
                 priority
-                className="aspect-[9/16] w-full rounded-[1.1rem] object-cover"
+                className="aspect-[4/3] max-h-[430px] w-full rounded-[1.1rem] object-cover"
               />
             </div>
           </div>
@@ -124,11 +144,13 @@ export default function PersonalPage() {
                 <p className="mt-5 min-h-28 text-sm leading-6 text-primary/85">{item.body}</p>
 
                 {item.callout && (
-                  <div className="mt-4 rounded-lg bg-[#f5efe7] px-4 py-3 text-sm text-primary">
-                    {item.callout}
+                  <div className="mt-4 flex items-center gap-4 rounded-xl bg-[#f5efe7] px-4 py-3 text-lg text-primary shadow-sm">
+                    <FaZeMark />
+                    <span>
+                      Favorite team: <strong className="font-serif text-2xl font-bold">FaZe Clan</strong>
+                    </span>
                   </div>
                 )}
-
               </motion.article>
             );
           })}
