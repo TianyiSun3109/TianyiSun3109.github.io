@@ -1,0 +1,10 @@
+type = "card"
+title = "Teaching"
+description = "Courses I have taught or assisted with."
+
+[[items]]
+title = "Course placeholder"
+subtitle = "Role placeholder"
+date = "YYYY"
+content = "Course description and responsibilities placeholder."
+tags = ["Tag placeholder"]

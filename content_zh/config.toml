@@ -1,0 +1,52 @@
+[site]
+title = "Tianyi Sun"
+description = "上海交通大学博士生个人主页。"
+last_updated = "2026年6月19日"
+
+[author]
+name = "Tianyi Sun"
+title = "博士生"
+institution = "上海交通大学"
+
+[social]
+location = "中国上海"
+location_details = [
+  "上海交通大学",
+  "中国上海"
+]
+
+[[navigation]]
+title = "关于"
+type = "page"
+target = "about"
+href = "/"
+
+[[navigation]]
+title = "论文"
+type = "page"
+target = "publications"
+href = "/publications"
+
+[[navigation]]
+title = "教学"
+type = "page"
+target = "teaching"
+href = "/teaching"
+
+[[navigation]]
+title = "获奖"
+type = "page"
+target = "awards"
+href = "/awards"
+
+[[navigation]]
+title = "服务"
+type = "page"
+target = "services"
+href = "/services"
+
+[[navigation]]
+title = "简历"
+type = "page"
+target = "cv"
+href = "/cv"

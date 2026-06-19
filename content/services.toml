@@ -1,0 +1,9 @@
+type = "card"
+title = "Services"
+description = "Professional services and community involvement."
+
+[[items]]
+title = "Service placeholder"
+subtitle = "Venue or organization placeholder"
+date = "YYYY"
+content = "Service description placeholder."

@@ -1,0 +1,75 @@
+[site]
+title = "Tianyi Sun"
+description = "PhD student at Shanghai Jiao Tong University."
+favicon = "/favicon.svg"
+last_updated = "June 19, 2026"
+
+[author]
+name = "Tianyi Sun"
+title = "PhD Student"
+institution = "Shanghai Jiao Tong University"
+avatar = "/bio.jpg"
+
+[social]
+email = "tianyi.sun@sjtu.edu.cn"
+location = "Shanghai, China"
+location_url = "https://maps.google.com/?q=Shanghai%20Jiao%20Tong%20University"
+location_details = [
+  "Shanghai Jiao Tong University",
+  "Shanghai, China"
+]
+google_scholar = "https://scholar.google.com/citations?hl=zh-CN&user=CviVLRAAAAAJ"
+github = "https://github.com/tianyisun3109"
+
+[features]
+enable_likes = true
+enable_one_page_mode = false
+
+[i18n]
+enabled = true
+locales = ["zh", "en"]
+default_locale = "en"
+mode = "auto"
+fixed_locale = "en"
+persist = true
+switcher = true
+
+[i18n.labels]
+zh = "中文"
+en = "English"
+
+[[navigation]]
+title = "About"
+type = "page"
+target = "about"
+href = "/"
+
+[[navigation]]
+title = "Publications"
+type = "page"
+target = "publications"
+href = "/publications"
+
+[[navigation]]
+title = "Teaching"
+type = "page"
+target = "teaching"
+href = "/teaching"
+
+[[navigation]]
+title = "Awards"
+type = "page"
+target = "awards"
+href = "/awards"
+
+[[navigation]]
+title = "Services"
+type = "page"
+target = "services"
+href = "/services"
+
+[[navigation]]
+title = "CV"
+type = "page"
+target = "cv"
+href = "/cv"
