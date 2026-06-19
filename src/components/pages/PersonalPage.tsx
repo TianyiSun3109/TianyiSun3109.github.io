@@ -81,7 +81,7 @@ export default function PersonalPage() {
                 width={720}
                 height={1280}
                 priority
-                className="aspect-[9/16] w-full rounded-[1.1rem] object-cover"
+                className="mx-auto h-[430px] max-h-[72vw] w-auto max-w-full rounded-[1.1rem] object-contain"
               />
             </div>
           </div>
@@ -124,8 +124,17 @@ export default function PersonalPage() {
                 <p className="mt-5 min-h-28 text-sm leading-6 text-primary/85">{item.body}</p>
 
                 {item.callout && (
-                  <div className="mt-4 rounded-xl bg-[#f5efe7] px-4 py-3 text-sm text-primary/85 shadow-sm">
-                    {item.callout}
+                  <div className="mt-4 flex items-center gap-4 rounded-xl bg-[#f5efe7] px-4 py-3 text-lg text-primary shadow-sm">
+                    <Image
+                      src="/fig/faze.png"
+                      alt="FaZe Clan logo"
+                      width={48}
+                      height={48}
+                      className="h-10 w-10 shrink-0 object-contain"
+                    />
+                    <span>
+                      Favorite team: <strong className="font-serif text-2xl font-bold">FaZe Clan</strong>
+                    </span>
                   </div>
                 )}
               </motion.article>
