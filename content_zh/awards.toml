@@ -1,9 +1,0 @@
-type = "card"
-title = "获奖"
-description = "荣誉和奖项。"
-
-[[items]]
-title = "奖项占位符"
-subtitle = "机构占位符"
-date = "YYYY"
-content = "奖项描述占位符。"

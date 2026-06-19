@@ -26,16 +26,15 @@ enable_likes = true
 enable_one_page_mode = false
 
 [i18n]
-enabled = true
-locales = ["zh", "en"]
+enabled = false
+locales = ["en"]
 default_locale = "en"
-mode = "auto"
+mode = "fixed"
 fixed_locale = "en"
-persist = true
-switcher = true
+persist = false
+switcher = false
 
 [i18n.labels]
-zh = "中文"
 en = "English"
 
 [[navigation]]
@@ -51,25 +50,7 @@ target = "publications"
 href = "/publications"
 
 [[navigation]]
-title = "Teaching"
+title = "Personal"
 type = "page"
-target = "teaching"
-href = "/teaching"
-
-[[navigation]]
-title = "Awards"
-type = "page"
-target = "awards"
-href = "/awards"
-
-[[navigation]]
-title = "Services"
-type = "page"
-target = "services"
-href = "/services"
-
-[[navigation]]
-title = "CV"
-type = "page"
-target = "cv"
-href = "/cv"
+target = "personal"
+href = "/personal"

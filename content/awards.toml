@@ -1,9 +1,0 @@
-type = "card"
-title = "Awards"
-description = "Honors and awards."
-
-[[items]]
-title = "Award placeholder"
-subtitle = "Organization placeholder"
-date = "YYYY"
-content = "Award description placeholder."
