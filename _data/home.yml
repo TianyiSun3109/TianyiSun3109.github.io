@@ -1,0 +1,76 @@
+# PRISM-inspired homepage content. Replace placeholder values here as your profile evolves.
+profile:
+  name: "Tianyi Sun"
+  title: "PhD Student"
+  affiliation: "Shanghai Jiao Tong University"
+  location: "Shanghai, China"
+  avatar: "profile.jpg"
+  cv_url: "/cv/"
+  research_interests:
+    - "Research interest placeholder"
+    - "Research interest placeholder"
+    - "Research interest placeholder"
+  links:
+    - label: "Email"
+      url: "mailto:tianyi.sun@sjtu.edu.cn"
+      icon: "fa-solid fa-envelope"
+    - label: "GitHub"
+      url: "https://github.com/tianyisun3109"
+      icon: "fa-brands fa-github"
+    - label: "Google Scholar"
+      url: "https://scholar.google.com/citations?hl=zh-CN&user=CviVLRAAAAAJ"
+      icon: "ai ai-google-scholar"
+
+about:
+  heading: "About"
+  paragraphs:
+    - "I am a PhD student at Shanghai Jiao Tong University."
+    - "My current research focuses on [research focus placeholder]. I am interested in [topic placeholder], [method placeholder], and [application placeholder]."
+    - "Before starting my PhD, I completed [previous education placeholder]."
+
+selected_publications:
+  heading: "Selected Publications"
+  view_all_label: "View All"
+  view_all_url: "/publications/"
+  items:
+    - title: "Selected publication title placeholder"
+      authors: "Tianyi Sun, Collaborator Name"
+      venue: "Venue placeholder"
+      year: "2026"
+      description: "One-sentence contribution summary placeholder."
+      links:
+        - label: "Paper"
+          url: "#"
+        - label: "Code"
+          url: "#"
+    - title: "Selected publication title placeholder"
+      authors: "Tianyi Sun, Collaborator Name"
+      venue: "Venue placeholder"
+      year: "2025"
+      description: "One-sentence contribution summary placeholder."
+      links:
+        - label: "Paper"
+          url: "#"
+    - title: "Selected publication title placeholder"
+      authors: "Tianyi Sun, Collaborator Name"
+      venue: "Venue placeholder"
+      year: "2024"
+      description: "One-sentence contribution summary placeholder."
+      links:
+        - label: "Paper"
+          url: "#"
+
+news:
+  heading: "News"
+  items:
+    - date: "2026-06"
+      text: "Homepage redesigned with a PRISM-inspired academic layout."
+    - date: "YYYY-MM"
+      text: "News item placeholder."
+    - date: "YYYY-MM"
+      text: "News item placeholder."
+
+footer:
+  last_updated: "June 2026"
+  credit: "Inspired by PRISM"
+  credit_url: "https://github.com/xyjoey/PRISM"
