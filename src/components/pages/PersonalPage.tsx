@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { Bike, Crosshair, Footprints, ImageIcon, Sparkles } from 'lucide-react';
+import { Bike, Crosshair, Footprints, Sparkles } from 'lucide-react';
 
 const cardItems = [
   {
@@ -11,16 +11,14 @@ const cardItems = [
     image: '/fig/running.jpg',
     imageAlt: 'Running',
     body: 'Running clears my head and keeps me grounded. I enjoy the solitude of long runs, the rhythm of steady miles, and the sense of progress, one step at a time.',
-    tags: ['Endurance', 'Discipline', 'Freedom', 'Growth'],
     tone: 'amber',
   },
   {
-    title: 'Cycling',
+    title: 'Urbex',
     icon: Bike,
-    image: '',
-    imageAlt: 'Cycling',
-    body: 'Cycling is my way to explore, breathe deeply, and see the world from a different pace. There is nothing like a good ride on a clear day with great views.',
-    tags: ['Adventure', 'Focus', 'Exploration', 'Views'],
+    image: '/fig/urbanx.png',
+    imageAlt: 'Urbex',
+    body: 'I love exploring every corner of the city—from grand modern structures like Lujiazui, to the old residential areas built in the last century or the early 2000s. I truly enjoy the feeling of wandering through time, moving between different eras with every turn.',
     tone: 'slate',
   },
   {
@@ -29,7 +27,6 @@ const cardItems = [
     image: '/fig/cs.png',
     imageAlt: 'CS2',
     body: 'I enjoy the strategy, teamwork, and precision that CS2 brings. It is where quick decisions and calm minds make the difference.',
-    tags: ['Strategy', 'Teamwork', 'Focus', 'Intensity'],
     tone: 'rose',
     callout: 'Favorite team: FaZe Clan',
   },
@@ -63,9 +60,9 @@ export default function PersonalPage() {
 
             <blockquote className="relative max-w-xl font-serif text-2xl italic leading-snug text-primary sm:text-3xl">
               <span className="absolute -left-7 -top-2 text-5xl not-italic text-accent/80">“</span>
-              Balance is not something you find,
+              The future will always outshine
               <br />
-              it&apos;s something you build.
+              the past and the present—in every sense.
               <span className="ml-2 text-5xl not-italic text-accent/80">”</span>
             </blockquote>
 
@@ -81,10 +78,10 @@ export default function PersonalPage() {
               <Image
                 src="/fig/main.png"
                 alt="Mountain lake at sunset"
-                width={900}
-                height={640}
+                width={720}
+                height={1280}
                 priority
-                className="aspect-[4/3] w-full rounded-[1.1rem] object-cover"
+                className="aspect-[9/16] w-full rounded-[1.1rem] object-cover"
               />
             </div>
           </div>
@@ -116,20 +113,13 @@ export default function PersonalPage() {
                   <Sparkles className="h-5 w-5 text-accent" aria-hidden="true" />
                 </div>
 
-                {item.image ? (
-                  <Image
-                    src={item.image}
-                    alt={item.imageAlt}
-                    width={640}
-                    height={400}
-                    className="aspect-[1.55/1] w-full rounded-xl border border-accent/15 object-cover shadow-inner"
-                  />
-                ) : (
-                  <div className="flex aspect-[1.55/1] w-full flex-col items-center justify-center rounded-xl border border-dashed border-accent/25 bg-[#f7f0e7]/70 text-primary/35">
-                    <ImageIcon className="mb-2 h-16 w-16" aria-hidden="true" />
-                    <span className="text-sm">Your photo here</span>
-                  </div>
-                )}
+                <Image
+                  src={item.image}
+                  alt={item.imageAlt}
+                  width={640}
+                  height={400}
+                  className="aspect-[1.55/1] w-full rounded-xl border border-accent/15 object-cover shadow-inner"
+                />
 
                 <p className="mt-5 min-h-28 text-sm leading-6 text-primary/85">{item.body}</p>
 
@@ -139,16 +129,6 @@ export default function PersonalPage() {
                   </div>
                 )}
 
-                <div className="mt-5 flex flex-wrap gap-2">
-                  {item.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="rounded-lg bg-[#f1eadf] px-3 py-1.5 text-xs font-medium text-primary/85"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
               </motion.article>
             );
           })}
