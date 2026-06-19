@@ -47,7 +47,7 @@ export default function PersonalPage() {
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="grid items-center gap-10 py-6 lg:grid-cols-[0.92fr_1.08fr]"
+          className="grid items-center gap-10 py-6 lg:grid-cols-[minmax(0,1fr)_auto]"
         >
           <div>
             <div className="mb-4 flex items-center gap-3">
@@ -72,9 +72,9 @@ export default function PersonalPage() {
             </p>
           </div>
 
-          <div className="relative">
+          <div className="relative mx-auto w-fit max-w-full lg:mx-0 lg:justify-self-end">
             <div className="absolute -left-7 -top-6 h-12 w-28 rotate-[-18deg] rounded-sm bg-accent/20 shadow-sm" />
-            <div className="relative rounded-[1.5rem] border border-white/80 bg-white p-3 shadow-2xl">
+            <div className="relative w-fit rounded-[1.5rem] border border-white/80 bg-white p-3 shadow-2xl">
               <Image
                 src="/fig/main.png"
                 alt="Mountain lake at sunset"
